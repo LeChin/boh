@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  namespace :admin do
+  end
+  # mount Fae below your admin namespec
+  mount Fae::Engine => '/admin'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
