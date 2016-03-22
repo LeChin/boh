@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  position: 1
+  yield: 1
+  time: MyString
+  description: MyText
+  method: MyText
+  possible_combination: MyText
+
+two:
+  name: MyString
+  position: 1
+  yield: 1
+  time: MyString
+  description: MyText
+  method: MyText
+  possible_combination: MyText

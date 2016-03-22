@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160322040825) do
+ActiveRecord::Schema.define(version: 20160322042334) do
 
   create_table "fae_changes", force: :cascade do |t|
     t.integer  "changeable_id"
@@ -168,5 +168,19 @@ ActiveRecord::Schema.define(version: 20160322040825) do
   add_index "fae_users", ["reset_password_token"], name: "index_fae_users_on_reset_password_token", unique: true
   add_index "fae_users", ["role_id"], name: "index_fae_users_on_role_id"
   add_index "fae_users", ["unlock_token"], name: "index_fae_users_on_unlock_token", unique: true
+
+  create_table "recipes", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "position"
+    t.string   "yield"
+    t.string   "prep_time"
+    t.string   "cook_time"
+    t.text     "description"
+    t.text     "ingredients"
+    t.text     "method"
+    t.text     "possible_combination"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
 
 end
